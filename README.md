@@ -1,2 +1,2 @@
-# eingland.github.io
-Personal Website on Github Pages.
+# ericingland.com
+Personal Website
