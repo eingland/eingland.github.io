@@ -39,8 +39,8 @@ copyright = "© This post is licensed under a Creative Commons Attribution 4.0 I
 [params]
   author = "Eric Ingland"
   avatar = "/media/avatar.jpg"
-  seotitle = "Eric Ingland - Microsoft Certified Technical Analyst"
-  subtitle = "Microsoft Certified Technical Analyst"
+  seotitle = "Eric Ingland - Systems Administrator and Software Developer"
+  subtitle = "Systems Administrator and Software Developer"
   description = "Personal Blog"
   paginate = 10
 
