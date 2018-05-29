@@ -41,7 +41,7 @@ copyright = "© This post is licensed under a Creative Commons Attribution 4.0 I
   avatar = "/media/avatar.jpg"
   seotitle = "Eric Ingland - Microsoft Certified Technical Analyst"
   subtitle = "Microsoft Certified Technical Analyst"
-  description = "Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again."
+  description = "Personal Blog"
   paginate = 10
 
   # Choose your social networks
