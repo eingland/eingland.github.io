@@ -1,0 +1,22 @@
+name: Projects
+source:
+
+  - icon: fa fa-github
+    name: Random Gift Finder
+    description: Android Application to find random gifts using eBay API
+    url: https://github.com/eingland/RandomGiftFinder
+
+  - icon: fa fa-github
+    name: ApplicationForm
+    description: Submit application forms with .NET Core.
+    url: https://github.com/eingland/ApplicationForm
+
+  - icon: fa fa-github
+    name: Conversation Starter Help 
+    description: Android Application to generate things to say and start conversations.
+    url: https://github.com/eingland/Conversation-Starter-Help
+
+  - icon: fa fa-github
+    name: Simple-Fractal-Viewer
+    description: View Mandelbrot and Julia Fractals in a web browser.
+    url: https://github.com/eingland/Simple-Fractal-Viewer
