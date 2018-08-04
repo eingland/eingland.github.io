@@ -2,6 +2,16 @@ name: Projects
 source:
 
   - icon: fa fa-github
+    name: CountryIPLookup
+    description: Look up the country from an IP address with .NET Core
+    url: https://github.com/eingland/CountryIPLookup
+
+  - icon: fa fa-github
+    name: CoreWebFTP
+    description: An open source FTP/SFTP client in ASP.NET Core.
+    url: https://github.com/eingland/corewebftp
+
+  - icon: fa fa-github
     name: Random Gift Finder
     description: Android Application to find random gifts using eBay API
     url: https://github.com/eingland/RandomGiftFinder
