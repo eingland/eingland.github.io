@@ -1,2 +1,2 @@
 # ericingland.com
-Personal Website
+Personal Website and Development Log
