@@ -3,7 +3,7 @@ title: "Look up country by IP Address with ASP.NET Core"
 date: 2018-08-04
 tags:
   - Development
-  - C#
+  - CSharp
   - Web
   - ASP.NET Core
 ---
