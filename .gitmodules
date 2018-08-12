@@ -2,3 +2,7 @@
 	path = themes/hugo-sustain
 	url = https://github.com/eingland/hugo-sustain.git
 
+[submodule "public"]
+	path = public
+	url = git@github.com:eingland/eingland.github.io.git
+	branch = master
