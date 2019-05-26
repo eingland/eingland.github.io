@@ -2,31 +2,26 @@ name: Projects
 source:
 
   - icon: fa fa-github
-    name: CountryIPLookup
-    description: Look up the country from an IP address with .NET Core
+    name: Country IP Lookup
+    description: Look up the country from an IP address with a .NET Core Web App
     url: https://github.com/eingland/CountryIPLookup
 
   - icon: fa fa-github
-    name: CoreWebFTP
-    description: An open source FTP/SFTP client in ASP.NET Core.
-    url: https://github.com/eingland/corewebftp
+    name: Message Board
+    description: Node.js application to implement an anonymous message board
+    url: https://github.com/eingland/messageboard
 
   - icon: fa fa-github
-    name: Random Gift Finder
-    description: Android Application to find random gifts using eBay API
-    url: https://github.com/eingland/RandomGiftFinder
+    name: Issue Tracker
+    description: Node.js application to track issues for software development
+    url: https://github.com/eingland/issuetracker
 
   - icon: fa fa-github
-    name: ApplicationForm
-    description: Submit application forms with .NET Core.
-    url: https://github.com/eingland/ApplicationForm
+    name: URL Shortener Microservice
+    description: Node.js application to generate shortened URLs
+    url: https://github.com/eingland/url-shortener-microservice
 
   - icon: fa fa-github
-    name: Conversation Starter Help 
-    description: Android Application to generate things to say and start conversations.
-    url: https://github.com/eingland/Conversation-Starter-Help
-
-  - icon: fa fa-github
-    name: Simple-Fractal-Viewer
-    description: View Mandelbrot and Julia Fractals in a web browser.
-    url: https://github.com/eingland/Simple-Fractal-Viewer
+    name: More Projects on Github
+    description: Other projects I have on Github
+    url: https://github.com/eingland?tab=repositories
