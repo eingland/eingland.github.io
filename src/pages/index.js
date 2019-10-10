@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import PostLink from "../components/post-link"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const IndexPage = ({
   data: {
@@ -27,10 +28,37 @@ const IndexPage = ({
         </div>
         <h1>Hi I'm Eric Ingland</h1>
         <p>A DevOps Engineer, and Software Developer.
-I love all things computer science and math.
-Have a look at some of my working <Link to="/projects/">projects</Link>.</p>
+          I love all things computer science and math.
+          Have a look at some of my working <Link to="/projects/">projects</Link>.</p>
         <p>Contact me at <Link to="http://twitter.com/ericingland">@ericingland</Link> or by <Link to="mailto:ingland.eric@gmail.com">email</Link>.</p>
         <p>Social media icons to go here.</p>
+        <ul>
+          <li>
+            <a href="http://github.com/eingland">
+              <FontAwesomeIcon icon={["fab", "github"]} style={{color:"#000000"}} />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:ingland.eric@gmail.com">
+              <FontAwesomeIcon icon="envelope" style={{color:"#000000"}} />
+            </a>
+          </li>
+          <li>
+            <a href="http://twitter.com/ericingland">
+              <FontAwesomeIcon icon={["fab", "twitter"]} style={{color:"#000000"}} />
+            </a>
+          </li>
+          <li>
+            <a href="http://linkedin.com/in/ericingland">
+              <FontAwesomeIcon icon={["fab", "linkedin"]} style={{color:"#000000"}} />
+            </a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/users/9735692/eric-ingland">
+              <FontAwesomeIcon icon={["fab", "stack-overflow"]} style={{color:"#000000"}} />
+            </a>
+          </li>
+        </ul>
         <br />
         <h2>Projects</h2>
         <div>To be added.</div>
