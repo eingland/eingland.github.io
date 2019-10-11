@@ -2,10 +2,7 @@
 path: "/blog/enable-microsoftupdate"
 date: "2018-05-28"
 title: "Enable Microsoft Update Service with PowerShell"
-tags:
-  - Development
-  - Powershell
-  - Script
+tags: ["Development", "PowerShell", "Script"]
 ---
 
 ### **Enable Microsoft Update Service**

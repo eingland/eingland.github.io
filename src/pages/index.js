@@ -31,7 +31,6 @@ const IndexPage = ({
           I love all things computer science and math.
           Have a look at some of my working <Link to="/projects/">projects</Link>.</p>
         <p>Contact me at <Link to="http://twitter.com/ericingland">@ericingland</Link> or by <Link to="mailto:ingland.eric@gmail.com">email</Link>.</p>
-        <p>Social media icons to go here.</p>
         <ul>
           <li>
             <a href="http://github.com/eingland">
@@ -59,12 +58,14 @@ const IndexPage = ({
             </a>
           </li>
         </ul>
+        <a href="/tags">Tags</a>
+        <a href="/blog">Blog</a>
         <br />
         <h2>Projects</h2>
         <div>To be added.</div>
         <br />
         <br />
-        <h2>Blog Posts</h2>
+        <h2>Recent Blog Posts</h2>
         <div>{Posts}</div>
         <br />
       </Layout>

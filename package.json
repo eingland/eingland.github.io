@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "ericinglandcom",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Personal Blog Site",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Eric Ingland <ingland.eric@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
@@ -15,6 +15,7 @@
     "gatsby-plugin-offline": "^3.0.13",
     "gatsby-plugin-react-helmet": "^3.1.11",
     "gatsby-plugin-sharp": "^2.2.29",
+    "gatsby-plugin-typography": "^2.3.12",
     "gatsby-remark-embed-gist": "^1.1.9",
     "gatsby-remark-prismjs": "^3.3.18",
     "gatsby-source-filesystem": "^2.1.31",
@@ -24,7 +25,10 @@
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19",
+    "typography-theme-irving": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
@@ -32,7 +36,7 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
+  "license": "",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -43,9 +47,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/eingland/ericingland.com"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/eingland/ericingland.com/issues"
   }
 }

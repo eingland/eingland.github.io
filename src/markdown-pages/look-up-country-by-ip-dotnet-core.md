@@ -2,11 +2,7 @@
 path: "/blog/look-up-country-by-ip-dotnet-core"
 date: "2018-08-04"
 title: "Look up country by IP Address with ASP.NET Core"
-tags:
-  - Development
-  - CSharp
-  - Web
-  - ASP.NET Core
+tags: ["Development", "CSharp", "Web", "ASP.NET Core"]
 ---
 
 As a training exercise I referenced https://github.com/karan/Projects and started a project to create a web service to look up the country from an IP address with .NET Core. I used the DB-IP downloadable CSV for IP ranges and the associated countries. The code took a single night to write and consists of only a couple functions to process the table and return the country.

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Eric Ingland`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Eric Ingland's Personal Blog Site.`,
     author: `@eingland`,
   },
   plugins: [
@@ -85,6 +85,12 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography.js`,
       },
     },
     {
