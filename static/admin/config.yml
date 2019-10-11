@@ -1,0 +1,26 @@
+backend:
+  name: github
+  repo: eingland/ericingland.com # Path to your GitHub repository
+  branch: develop # Branch to update (master by default)
+
+publish_mode: editorial_workflow
+media_folder: "static/images" # Folder where user uploaded files should go
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "post" # Used in routes, ie.: /admin/collections/:path/edit
+    label: "Post" # Used in the UI, ie.: "New Post"
+    folder: "src/markdown-pages" # The path to the folder where the documents are stored
+    sort: "date:desc" # Default is title:asc
+    create: true # Allow users to create new documents in this collection
+    path: "{{path}}"
+    fields: # The fields each document in this collection have
+      - { label: Title, name: "title", widget: "string", tagname: "h1" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: Path, name: "path", widget: "string" }
+      - {
+          label: Tags,
+          name: tags,
+          widget: list,
+          default: ["APIs", "JavaScript"],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
