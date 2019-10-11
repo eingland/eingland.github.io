@@ -23,7 +23,8 @@ const IndexPage = ({
       <Layout>
         <SEO title="Home" />
         
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+        <div style={{ maxWidth: `400px`, margin: `0 auto`, marginBottom: `1.45rem`, justifyContent: 'center',
+    alignItems: 'center'}}>
           <Image />
         </div>
         <h1>Hi I'm Eric Ingland</h1>
