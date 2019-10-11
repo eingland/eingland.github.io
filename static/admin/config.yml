@@ -21,6 +21,6 @@ collections: # A list of collections the CMS should be able to edit
           label: Tags,
           name: tags,
           widget: list,
-          default: ["APIs", "JavaScript"],
+          default: [],
         }
       - { label: "Body", name: "body", widget: "markdown" }
