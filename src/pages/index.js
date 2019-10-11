@@ -20,7 +20,7 @@ const IndexPage = () => (
           <p>A DevOps Engineer, and Software Developer.
             I love all things computer science.
             Come have a look at my <Link to="/blog/">blog</Link>.</p>
-          <p>Contact me at <Link to="http://twitter.com/ericingland">@ericingland</Link> or by <Link to="mailto:ingland.eric@gmail.com">email</Link>.</p>
+          <p>Contact me at <a href="http://twitter.com/ericingland">@ericingland</a> or by <a href="mailto:ingland.eric@gmail.com">email</a>.</p>
           <ul style={{ display: "flex", flex: 1, alignItems: `center`, justifyContent: `center` }}>
             <li className="nav-link">
               <a href="http://github.com/eingland">
