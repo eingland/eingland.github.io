@@ -1,12 +1,8 @@
 ---
+path: "/blog/autohotkey-volume-shortcuts-script"
+date: "2016-12-30"
 title: AutoHotkey Volume Shortcuts Script
-type: post
-date: 2016-12-30
-tags:
-  - Development
-  - Autohotkey
-  - Script
-  - Volume
+tags: ["Development", "AutoHotKey", "Script", "Volume"]
 
 ---
 I replaced my keyboard a couple of weeks ago to one without media keys and had a need to add them back with a script. For this purpose I decided to finally give AutoHotkey a chance. On the AutoHotkey Script Showcase I saw an existing script for volume shortcuts but it created a redundant on screen volume indicator so I decided it was time to write a simpler version. I use the on screen volume indicator that is built into Windows instead of creating an additional implementation. I also needed to avoid using shortcuts that were already in use so I made them require pressing Ctrl which is in many of the example scripts for AutoHotkey.
@@ -21,8 +17,7 @@ I replaced my keyboard a couple of weeks ago to one without media keys and had a
 
 This script works the same as the Volume Mute, Volume Down and Volume Up keys on a media keyboard.
 
-
-{{< gist eingland 12fa9e55110b981f06c8d0e58eaa8c2b >}}
+`gist:eingland/12fa9e55110b981f06c8d0e58eaa8c2b`
 
 ## How to Use
 
