@@ -1,3 +1,7 @@
+# ericingland.com
+
+Personal blog site built with Gatsby.
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
