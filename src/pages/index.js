@@ -18,9 +18,9 @@ const IndexPage = () => (
         <h1>Hi I'm Eric Ingland</h1>
         <p>A DevOps Engineer, and Software Developer.
           I love all things computer science and math.
-          Have a look at some of my working <Link to="/projects/">projects</Link>.</p>
+          Have a look at my <Link to="/blog/">blog</Link>.</p>
         <p>Contact me at <Link to="http://twitter.com/ericingland">@ericingland</Link> or by <Link to="mailto:ingland.eric@gmail.com">email</Link>.</p>
-        <ul>
+        <ul style={{ display: "flex", flex: 1 }}>
           <li>
             <a href="http://github.com/eingland">
               <FontAwesomeIcon icon={["fab", "github"]} style={{color:"#000000"}} />
