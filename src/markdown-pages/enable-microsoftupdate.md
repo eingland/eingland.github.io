@@ -1,5 +1,5 @@
 ---
-path: "/blog/enable-microsoftupdate"
+slug: "enable-microsoftupdate"
 date: "2018-05-28"
 title: "Enable Microsoft Update Service with PowerShell"
 tags: ["Development", "PowerShell", "Script"]

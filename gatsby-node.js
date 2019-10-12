@@ -15,9 +15,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       ) {
         edges {
           node {
+            fields {
+              slug
+            }
             frontmatter {
               tags
-              path
             }
           }
         }
@@ -41,8 +43,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   // Create post detail pages
   posts.forEach(({ node }) => {
     createPage({
-      path: node.frontmatter.path,
+      path: `/blog/${node.fields.slug}/`,
       component: blogPostTemplate,
+      context: {
+        slug: node.fields.slug,
+      }
     })
   })
 
@@ -73,11 +78,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     node.internal.type === `MarkdownRemark` &&
     typeof node.slug === "undefined"
   ) {
-    const fileNode = getNode(node.parent)
+    const slug = node.frontmatter.slug
     createNodeField({
       node,
       name: `slug`,
-      value: fileNode.fields.slug,
+      value: slug,
     })
     if (node.frontmatter.tags) {
       const tagSlugs = node.frontmatter.tags.map(

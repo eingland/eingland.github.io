@@ -12,11 +12,11 @@ collections: # A list of collections the CMS should be able to edit
     folder: "src/markdown-pages" # The path to the folder where the documents are stored
     sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
-    path: "{{path}}"
+    slug: "{{slug}}"
     fields: # The fields each document in this collection have
       - { label: Title, name: "title", widget: "string", tagname: "h1" }
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: Path, name: "path", widget: "string" }
+      - { label: Slug, name: "slug", widget: "string" }
       - {
           label: Tags,
           name: tags,

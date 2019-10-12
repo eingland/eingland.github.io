@@ -17,9 +17,9 @@ const IndexPage = () => (
             <Image />
           </div>
           <h1>Hi, I'm Eric Ingland!</h1>
-          <p>A DevOps Engineer, and Software Developer.
+          <p>I'm a <b>DevOps Engineer</b>.
             I love all things computer science.
-            Come have a look at my <Link to="/blog/">blog</Link>.</p>
+            Come have a look at my <Link to="/blog/">blog</Link> or my projects on <a href="http://github.com/eingland">Github</a>.</p>
           <p>Contact me at <a href="http://twitter.com/ericingland">@ericingland</a> or by <a href="mailto:ingland.eric@gmail.com">email</a>.</p>
           <ul style={{ display: "flex", flex: 1, alignItems: `center`, justifyContent: `center` }}>
             <li className="nav-link">

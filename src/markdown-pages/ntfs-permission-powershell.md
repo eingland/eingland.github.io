@@ -1,5 +1,5 @@
 ---
-path: "/blog/ntfs-permission-powershell"
+slug: "ntfs-permission-powershell"
 title: "How to Add NTFS Permission to Subfolders of Directory with PowerShell"
 date: "2018-05-27"
 tags: ["Development", "PowerShell", "Script", "NTFS"]

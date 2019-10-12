@@ -42,10 +42,10 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+        <footer className="text-center small">
           © {new Date().getFullYear()} All rights reserved. Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org">Gatsby</a>.
         </footer>
       </div>
     </>
