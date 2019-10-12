@@ -1,11 +1,11 @@
-const path = require("path")
-const _ = require("lodash")
+const path = require('path')
+const _ = require('lodash')
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
-  const blogPostTemplate = path.resolve("src/templates/blog.js")
-  const tagTemplate = path.resolve("src/templates/tags.js")
+  const blogPostTemplate = path.resolve('src/templates/blog.js')
+  const tagTemplate = path.resolve('src/templates/tags.js')
 
   const result = await graphql(`
     {
@@ -34,7 +34,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   // handle errors
   if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    reporter.panicOnBuild('Error while running GraphQL query.')
     return
   }
 
@@ -46,7 +46,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       path: `/blog/${node.fields.slug}/`,
       component: blogPostTemplate,
       context: {
-        slug: node.fields.slug,
+        slug: node.fields.slug
       }
     })
   })
@@ -60,8 +60,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
       component: tagTemplate,
       context: {
-        tag: tag.fieldValue,
-      },
+        tag: tag.fieldValue
+      }
     })
   })
 }
@@ -70,25 +70,25 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
-  if (node.internal.type === `File`) {
+  if (node.internal.type === 'File') {
     const parsedFilePath = path.parse(node.absolutePath)
-    const slug = `/${parsedFilePath.dir.split("---")[1]}/`
-    createNodeField({ node, name: `slug`, value: slug })
+    const slug = `/${parsedFilePath.dir.split('---')[1]}/`
+    createNodeField({ node, name: 'slug', value: slug })
   } else if (
-    node.internal.type === `MarkdownRemark` &&
-    typeof node.slug === "undefined"
+    node.internal.type === 'MarkdownRemark' &&
+    typeof node.slug === 'undefined'
   ) {
     const slug = node.frontmatter.slug
     createNodeField({
       node,
-      name: `slug`,
-      value: slug,
+      name: 'slug',
+      value: slug
     })
     if (node.frontmatter.tags) {
       const tagSlugs = node.frontmatter.tags.map(
         tag => `/tags/${_.kebabCase(tag)}/`
       )
-      createNodeField({ node, name: `tagSlugs`, value: tagSlugs })
+      createNodeField({ node, name: 'tagSlugs', value: tagSlugs })
     }
   }
 }

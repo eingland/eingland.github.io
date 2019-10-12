@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Eric Ingland`,
-    description: `Eric Ingland's Personal Blog Site.`,
-    author: `@eingland`,
+    title: 'Eric Ingland',
+    description: 'Eric Ingland\'s Personal Blog Site.',
+    author: '@eingland'
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: "UA-54604214-6",
+        trackingId: 'UA-54604214-6',
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false,
         // Setting this parameter is optional
@@ -16,34 +16,34 @@ module.exports = {
         // Setting this parameter is also optional
         respectDNT: true,
         // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        exclude: ['/preview/**', '/do-not-track/me/too/'],
         // Delays sending pageview hits on route update (in milliseconds)
         pageTransitionDelay: 0,
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: "ericingland.com",
-      },
+        cookieDomain: 'ericingland.com'
+      }
     },
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-embed-gist",
+            resolve: 'gatsby-remark-embed-gist',
             options: {
               // Optional:
-    
+
               // the github handler whose gists are to be accessed
               username: 'eingland',
-    
+
               // a flag indicating whether the github default gist css should be included or not
               // default: true
               includeDefaultCss: true
             }
           },
           {
-            resolve: `gatsby-remark-prismjs`,
+            resolve: 'gatsby-remark-prismjs',
             options: {
               // Class prefix for <pre> tags containing syntax highlighting;
               // defaults to 'language-' (eg <pre class="language-js">).
@@ -52,7 +52,7 @@ module.exports = {
               // you may use this to prevent Prism from re-processing syntax.
               // This is an uncommon use-case though;
               // If you're unsure, it's best to use the default value.
-              classPrefix: "language-",
+              classPrefix: 'language-',
               // This is used to allow setting a language for inline code
               // (i.e. single backticks) by creating a separator.
               // This separator is a string and will do no white-space
@@ -82,66 +82,66 @@ module.exports = {
               // existing language" below.
               languageExtensions: [
                 {
-                  language: "superscript",
-                  extend: "javascript",
+                  language: 'superscript',
+                  extend: 'javascript',
                   definition: {
-                    superscript_types: /(SuperType)/,
+                    superscript_types: /(SuperType)/
                   },
                   insertBefore: {
                     function: {
-                      superscript_keywords: /(superif|superelse)/,
-                    },
-                  },
-                },
+                      superscript_keywords: /(superif|superelse)/
+                    }
+                  }
+                }
               ],
               // Customize the prompt used in shell output
               // Values below are default
               prompt: {
-                user: "root",
-                host: "localhost",
-                global: false,
-              },
-            },
-          },
-        ],
-      },
+                user: 'root',
+                host: 'localhost',
+                global: false
+              }
+            }
+          }
+        ]
+      }
     },
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: 'gatsby-plugin-typography',
       options: {
-        pathToConfigModule: `src/utils/typography.js`,
-      },
+        pathToConfigModule: 'src/utils/typography.js'
+      }
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images/`,
-      },
+        name: 'images',
+        path: `${__dirname}/src/images/`
+      }
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `pages`,
-        path: `${__dirname}/src/markdown-pages`,
-      },
+        name: 'pages',
+        path: `${__dirname}/src/markdown-pages`
+      }
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `gatsby-ericinglandcom`,
-        short_name: `ericinglandcom`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        //icon: ``, // This path is relative to the root of the site.
-      },
-    },
+        name: 'gatsby-ericinglandcom',
+        short_name: 'ericinglandcom',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui'
+        // icon: ``, // This path is relative to the root of the site.
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ],
+  ]
 }
