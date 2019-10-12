@@ -1,5 +1,5 @@
 ---
-path: "/blog/look-up-country-by-ip-dotnet-core"
+slug: "look-up-country-by-ip-dotnet-core"
 date: "2018-08-04"
 title: "Look up country by IP Address with ASP.NET Core"
 tags: ["Development", "CSharp", "Web", "ASP.NET Core"]

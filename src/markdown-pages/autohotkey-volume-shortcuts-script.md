@@ -1,5 +1,5 @@
 ---
-path: "/blog/autohotkey-volume-shortcuts-script"
+slug: "autohotkey-volume-shortcuts-script"
 date: "2016-12-30"
 title: AutoHotkey Volume Shortcuts Script
 tags: ["Development", "AutoHotKey", "Script", "Volume"]
