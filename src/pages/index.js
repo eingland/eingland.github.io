@@ -47,11 +47,6 @@ const IndexPage = () => (
             <FontAwesomeIcon icon={['fab', 'linkedin']} style={{ color: '#000000' }} />
           </a>
         </li>
-        <li className="nav-link">
-          <a href="http://stackoverflow.com/users/9735692/eric-ingland">
-            <FontAwesomeIcon icon={['fab', 'stack-overflow']} style={{ color: '#000000' }} />
-          </a>
-        </li>
       </ul>
     </div>
   </Layout>
