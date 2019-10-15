@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Eric Ingland',
     description: 'Eric Ingland\'s Personal Blog Site.',
-    author: '@eingland'
+    author: '@eingland',
+    siteUrl: 'https://www.ericingland.com'
   },
   plugins: [
     {
@@ -24,6 +25,7 @@ module.exports = {
         cookieDomain: 'ericingland.com'
       }
     },
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-transformer-remark',
