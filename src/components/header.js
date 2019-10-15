@@ -3,11 +3,11 @@ import React from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faHome, faTag, faBlog } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faTag, faBlog, faSearch } from '@fortawesome/free-solid-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-library.add(faHome, faTag, faBlog)
+library.add(faHome, faTag, faBlog, faSearch)
 
 const Header = ({ siteTitle }) => (
   <header>
@@ -19,6 +19,7 @@ const Header = ({ siteTitle }) => (
           <Nav.Link href="/"><FontAwesomeIcon icon="home" /> Home</Nav.Link>
           <Nav.Link href="/blog"><FontAwesomeIcon icon="blog" /> Blog</Nav.Link>
           <Nav.Link href="/tags"><FontAwesomeIcon icon="tag" /> Tags</Nav.Link>
+          <Nav.Link href="/search"><FontAwesomeIcon icon="search" /> Search</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

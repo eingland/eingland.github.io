@@ -15,6 +15,8 @@ Personal website and blog built with Gatsby. My first real use of Gatsby and Rea
 * Bootstrap styled components with react-bootstrap
 * Netlify CMS Integration
 * Font Awesome Icons
+* Sitemap generation
+* RSS Feed generation
 
 ## Quick start
 
