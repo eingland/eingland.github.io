@@ -26,6 +26,8 @@ module.exports = {
       }
     },
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-feed',
+    'gatsby-plugin-netlify',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-transformer-remark',
