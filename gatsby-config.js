@@ -1,8 +1,11 @@
+const queries = require('./src/utils/algolia')
+require('dotenv').config()
 module.exports = {
   siteMetadata: {
     title: 'Eric Ingland',
     description: 'Eric Ingland\'s Personal Blog Site.',
-    author: '@eingland'
+    author: '@eingland',
+    siteUrl: 'https://www.ericingland.com'
   },
   plugins: [
     {
@@ -24,6 +27,61 @@ module.exports = {
         cookieDomain: 'ericingland.com'
       }
     },
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-feed',
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [{ 'content:encoded': edge.node.html }]
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+            title: "Eric Ingland's RSS Feed"
+          }
+        ]
+      }
+    },
+    'gatsby-plugin-netlify',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-transformer-remark',
@@ -134,13 +192,23 @@ module.exports = {
         name: 'gatsby-ericinglandcom',
         short_name: 'ericinglandcom',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui'
-        // icon: ``, // This path is relative to the root of the site.
+        background_color: '#000000',
+        theme_color: '#000000',
+        display: 'minimal-ui',
+        icon: './src/images/favicon.png' // This path is relative to the root of the site.
       }
     },
     'gatsby-plugin-offline',
-    'gatsby-plugin-netlify-cms'
+    'gatsby-plugin-netlify-cms',
+    {
+      resolve: 'gatsby-plugin-algolia',
+      options: {
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        queries,
+        chunkSize: 10000 // default: 1000
+      }
+    },
+    'gatsby-plugin-styled-components'
   ]
 }
