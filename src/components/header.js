@@ -19,7 +19,7 @@ const Header = ({ siteTitle, transparent }) => (
           <Nav.Link href="/"><FontAwesomeIcon icon="home" /> Home</Nav.Link>
           <Nav.Link href="/blog"><FontAwesomeIcon icon="blog" /> Blog</Nav.Link>
           <Nav.Link href="/tags"><FontAwesomeIcon icon="tag" /> Tags</Nav.Link>
-          <Nav.Link href="/search"><FontAwesomeIcon icon="search" /> Search</Nav.Link>
+          {/* <Nav.Link href="/search"><FontAwesomeIcon icon="search" /> Search</Nav.Link> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
