@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 library.add(faHome, faTag, faBlog, faSearch)
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, transparent }) => (
   <header>
     <Navbar bg="light" expand="lg">
       <Navbar.Brand href="/">{siteTitle}</Navbar.Brand>

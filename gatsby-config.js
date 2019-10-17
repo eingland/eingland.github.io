@@ -1,3 +1,5 @@
+const queries = require('./src/utils/algolia')
+require('dotenv').config()
 module.exports = {
   siteMetadata: {
     title: 'Eric Ingland',
@@ -197,6 +199,16 @@ module.exports = {
       }
     },
     'gatsby-plugin-offline',
-    'gatsby-plugin-netlify-cms'
+    'gatsby-plugin-netlify-cms',
+    {
+      resolve: 'gatsby-plugin-algolia',
+      options: {
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        queries,
+        chunkSize: 10000 // default: 1000
+      }
+    },
+    'gatsby-plugin-styled-components'
   ]
 }
