@@ -1,19 +1,16 @@
 # ericingland.com
 
-Personal website and blog built with Gatsby. My first real use of Gatsby and React on a production site.
+Personal website built with Gatsby. My first real use of Gatsby and React on a production site.
 
 ## Features
 
-* Editable blog pages in Markdown files
 * Images Lazy loading and webp support (gatsby-image)
-* Tags page
 * Offline support
 * Google Analytics
 * ESLint (JS Standard)
 * Prettier code styling
 * Theming with Typography.js
 * Bootstrap styled components with react-bootstrap
-* Netlify CMS Integration
 * Font Awesome Icons
 * Sitemap generation
 * RSS Feed generation
