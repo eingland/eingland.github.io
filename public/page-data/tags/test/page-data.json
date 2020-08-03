@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/test/","webpackCompilationHash":"","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"Test"},"frontmatter":{"title":"Test"}}}]}},"pageContext":{"isCreatedByStatefulCreatePages":false,"tag":"Test"}}}
