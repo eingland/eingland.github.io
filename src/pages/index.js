@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Image from '../components/image'
@@ -24,7 +23,7 @@ const IndexPage = () => (
       <h1>Hi, I'm Eric Ingland!</h1>
       <p>I'm a <b>DevOps Engineer</b>.
             I love all things computer science.
-            Come have a look at my <Link to="/blog/">blog</Link> or my projects on <a href="http://github.com/eingland">Github</a>.</p>
+            Please have a look at my projects on <a href="http://github.com/eingland">Github</a>.</p>
       <p>Contact me at <a href="http://twitter.com/ericingland">@ericingland</a> or by <a href="mailto:ingland.eric@gmail.com">email</a>.</p>
       <ul style={{ display: 'flex', flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <li className="nav-link">
