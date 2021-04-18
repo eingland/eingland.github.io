@@ -12,7 +12,7 @@ const IndexPage = () => (
 
     <div style={{ textAlign: 'center' }}>
       <div style={{
-        maxWidth: '400px',
+        maxWidth: '360px',
         margin: '0 auto',
         marginBottom: '1.45rem',
         justifyContent: 'center',
